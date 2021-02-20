@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-<!-- :D -->
 <!-- Head -->
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ristorante Generico</title>
 
-    <!-- Hojas de Estilos - Scripts -->
-    <link rel="stylesheet" href="css/master_Style.css" />
-    <script src="js/master_JavaScript.js" type="text/javascript"></script>
+    <!-- Iconos FontAwesome -->
+    <link href="icon/fontawesome/css/all.min.css" rel="stylesheet">
+
+    <!-- CSS - Javascript-->
+    <link rel="stylesheet" href="css/masterCSS.css" />
+    <script src="js/masterJS.js" type="text/javascript"></script>
 </head>
 
 <!-- Body -->
@@ -20,7 +22,7 @@
       <div class="columna_Categorias">
       <!-- Titulo -->
         <div class="titulo">
-            <img src="media/foodface96px.png" alt=""> 
+          <i class="fas fa-utensils"></i>
           <h1>Ristorante Generico</h1>
         </div>
         <!-- Navegacion por categorias del menu -->
@@ -28,30 +30,29 @@
           <ul>
             <!-- Opcion de Hamburquesas -->
             <li class="categorias">
-
-              <a href="#hamburquesas" class="opcion_Categorias active">
-                  <img src="media/hamburger.png" alt="">
+              <a id="hamburquesas" onclick="resaltarBoton(id)" href="#hamburquesas" class="opcion_Categorias active">
+                <i class="iconos_Categorias fas fa-hamburger"></i>
                 <span>Hamburquesas</span>
               </a>
             </li>
             <!-- Opcion de Pizzas -->
             <li class="categorias">
-              <a href="#pizzas" class="opcion_Categorias">
-                  <img src="media/pizza.png" alt="">
+              <a id="pizzas" onclick="resaltarBoton(id)" href="#pizzas" class="opcion_Categorias">
+                <i class="iconos_Categorias fas fa-pizza-slice"></i>
                 <span>Pizzas</span>
               </a>
             </li>
             <!-- Opcion de Postres -->
             <li class="categorias">
-              <a href="#postres" class="opcion_Categorias">
-                  <img src="media/dessert.png" alt="">
+              <a id="postres" onclick="resaltarBoton(id)" href="#postres" class="opcion_Categorias">
+                <i class="iconos_Categorias fas fa-ice-cream"></i>
                 <span>Postres</span>
               </a>
             </li>
             <!-- Opcion de Bebidas -->
             <li class="categorias">
-              <a href="#bebidas" class="opcion_Categorias">
-                  <img src="media/drink.png" alt="">
+              <a id="bebidas" onclick="resaltarBoton(id)" href="#bebidas" class="opcion_Categorias">
+                <i class="iconos_Categorias fas fa-glass-whiskey"></i>
                 <span>Bebidas</span>
               </a>
             </li>
