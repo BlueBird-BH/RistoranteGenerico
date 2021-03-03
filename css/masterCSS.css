@@ -187,8 +187,7 @@ main {
     height: 100%;
 }
 
-.bebidas_Categorias:visited { /* Evita que al cambiar de categoria, su titulo se marque como un hipervinculo morado */
-    text-decoration: none;
+.bebidas_Categorias {
     color: var(--blanco);
 }
 
